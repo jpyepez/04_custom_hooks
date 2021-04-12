@@ -1,0 +1,17 @@
+.stat {
+    margin: 0.25rem 0.5rem;
+}
+
+.statContainer {
+    border: solid 1px #777;
+    background-color: #eee;
+}
+
+.statContainer::before {
+    content: ' ';
+    white-space: pre;
+    width: var(--stat-width);
+    display: block;
+
+    background-color: var(--stat-color);
+}

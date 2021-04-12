@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import MainHeader from './components/layout/MainHeader';
+import MainContainer from './components/layout/MainContainer';
+import Cockpit from './components/main/Cockpit';
+import styles from './styles/Layout.module.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <MainHeader>
+                <h1 className={`${styles.m0} ${styles.m1}`}>
+                    Pokémon React App
+                </h1>
+            </MainHeader>
+            <MainContainer>
+                <Cockpit />
+            </MainContainer>
+        </div>
+    );
 }
 
 export default App;

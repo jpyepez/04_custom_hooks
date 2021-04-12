@@ -1,0 +1,51 @@
+.inputContainer {
+    position: relative;
+}
+
+.inputContainer label {
+    padding: 1.75rem 1rem 1rem;
+    position: absolute;
+
+    font-size: 1.4em;
+
+    color: #555;
+    cursor: text;
+
+    transition: all 0.1s;
+}
+
+.inputContainer input {
+    padding: 1.75rem 1rem 1.25rem;
+    border: none;
+    border-bottom: solid 2px #999;
+
+    font-size: 1.4em;
+
+    color: #555;
+    background-color: #eee;
+
+    outline: none;
+}
+
+.inputContainer input:focus {
+    padding: 2.25rem 1rem 0.75rem;
+    border-bottom: solid 2px rgb(28, 28, 199);
+}
+
+.inputContainer input:focus + label {
+    padding: 0.6rem 1rem;
+
+    font-size: 1rem;
+
+    color: rgb(28, 28, 199);
+}
+
+.inputContainer.hasValue label {
+    padding: 0.6rem 1rem;
+
+    font-size: 1rem;
+}
+
+.inputContainer.hasValue input {
+    padding: 2.25rem 1rem 0.75rem;
+}
